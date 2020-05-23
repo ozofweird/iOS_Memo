@@ -90,16 +90,16 @@ extension ViewController: ContentProtocol {
         }
     }
     
-        func addSend(data: String) {
-            self.personList.append(Content(name: data))
-//            self.tableView.reloadData()
+    func addSend(data: String) {
+        self.personList.append(Content(name: data))
+        self.tableView.reloadData()
             
-        }
-        
-        func detailSend(data: String, row: Int) {
-            self.personList[row].name = data
-//            self.tableView.reloadData()
-        }
+    }
+                
+    func detailSend(data: String, row: Int) {
+        self.personList[row].name = data
+        self.tableView.reloadData()
+    }
         
     
 }
